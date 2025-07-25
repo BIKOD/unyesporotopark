@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ünye Spor Otopark</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header class="banner">
+  <div class="banner-content">
+    <h1>Ünye Spor Otopark</h1>
+    <p>Ünye'nin merkezinde 7/24 Güvenli ve Modern Otopark</p>
+    <a href="#iletisim" class="cta-btn">Hemen İletişime Geç</a>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <a href="#hakkimizda">Hakkımızda</a>
+  <a href="#hizmetler">Hizmetler</a>
+  <a href="#iletisim">İletişim</a>
+  <a href="#odeme" class="highlight-nav">Online Ödeme</a>
+</nav>
+
+<main>
+  <section id="hakkimizda" class="section about">
+    <h2>Hakkımızda</h2>
+    <p>Ünye Spor Otopark olarak, aracınızı güvenle bırakabileceğiniz, modern ve temiz bir otopark deneyimi sunuyoruz. Şehrin merkezindeki konumumuz sayesinde ulaşımınız kolay, fiyatlarımız ise her bütçeye uygundur. Deneyimli personelimiz ve 7/24 kamera sistemimiz ile aracınız bizimle her zaman güvende. Müşteri memnuniyetini en ön planda tutuyor, sizlere hızlı, samimi ve çözüm odaklı hizmet sunuyoruz. Bizi tercih ederek hem aracınızı hem de zamanınızı güvence altına alırsınız.</p>
+  </section>
+
+  <section id="hizmetler" class="section services">
+    <h2>Hizmetlerimiz</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <i class="fa-solid fa-clock"></i>
+        <h3>Saatlik & Günlük Park</h3>
+        <p>Her gün <b>09:00 - 19:00</b> arası hizmet.<br>Pazar günü kapalıyız.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-calendar-check"></i>
+        <h3>Aylık Abonelik</h3>
+        <p>Uzun süreli park için avantajlı abonelikler.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-video"></i>
+        <h3>7/24 Güvenlik</h3>
+        <p>Gelişmiş kamera ve güvenlik sistemleri.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Merkezi Konum</h3>
+        <p>Ünye merkezde kolay ulaşım imkanı.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="iletisim" class="section contact">
+    <h2>İletişim</h2>
+    <div class="contact-info">
+      <p><i class="fa-solid fa-phone"></i> <a href="tel:+905xxxxxxxxx">+90 5xx xxx xx xx</a></p>
+      <p><i class="fa-solid fa-envelope"></i> unye1957@hotmail.com</p>
+      <p><i class="fa-solid fa-location-dot"></i> kaledere mah. hükümet cad. no:62 ordu ünye</p>
+    </div>
+    <form class="contact-form" autocomplete="off">
+      <input type="text" name="name" placeholder="Adınız Soyadınız" required>
+      <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+      <textarea name="message" placeholder="Mesajınız" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+
+  <section id="odeme" class="section payment payment-featured">
+    <div class="featured-badge">YENİ</div>
+    <div class="payment-header">
+      <i class="fa-solid fa-credit-card payment-icon"></i>
+      <h2>Online Ödeme</h2>
+      <p class="payment-desc">Plakanızı girerek borcunuzu kolayca öğrenin ve IBAN ile güvenli ödeme yapın.</p>
+    </div>
+    <div class="payment-card">
+      <form id="plakaForm" class="payment-form" autocomplete="off">
+        <label for="plaka">Aracınızın Plakası</label>
+        <input type="text" id="plaka" name="plaka" placeholder="Örn: 52ABC123" required maxlength="12">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> Borç Sorgula</button>
+      </form>
+      <div id="borcSonuc" class="borc-sonuc" style="display:none;">
+        <div class="borc-info">
+          <p><span class="borc-label">Plaka:</span> <span id="plakaGoster"></span></p>
+          <p><span class="borc-label">Borcunuz:</span> <span id="borcMiktar"></span> TL</p>
+        </div>
+        <div class="iban-bilgi">
+          <i class="fa-solid fa-money-check"></i>
+          <div>
+            <p><b>IBAN ile ödeme için:</b></p>
+            <p class="iban-numara">TR00 0000 0000 0000 0000 0000 00</p>
+            <p class="iban-aciklama">Lütfen açıklama kısmına plakanızı yazınız.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-social">
+      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 Ünye Spor Otopark. Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
